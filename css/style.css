@@ -17,6 +17,8 @@ a {
 	color: #fff;
 	overflow: auto;
 	position: sticky;
+	top: 0;
+	z-index: 100;
 }
 .container {
 	margin: auto;
