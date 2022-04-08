@@ -32,19 +32,6 @@ const prevSlide = () => {
 	}
 	setTimeout(() => current.classList.remove("current"));
 };
-setDate = () => {
-	let hours = new Date().getHours();
-	let minutes = new Date().getMinutes();
-	let seconds = new Date().getSeconds();
-	const currentDay = new Date().toDateString();
-	hours = hours >= 10 ? hours : `0${hours}`;
-	minutes = minutes >= 10 ? minutes : `0${minutes}`;
-	seconds = seconds >= 10 ? seconds : `0${seconds}`;
-	time.innerHTML = `${hours} : ${minutes} : ${seconds}`;
-	day.innerHTML = currentDay;
-};
-setDate();
-setInterval(setDate, 1000);
 
 next.addEventListener("click", (e) => {
 	nextSlide();
