@@ -1,5 +1,6 @@
 body {
-	background: url("../img/background.jpg") no-repeat center center/cover;
+	background: url("../img/background.jpg") no-repeat center
+		center/cover;
 }
 .image-container {
 	width: 90vw;
@@ -11,7 +12,7 @@ body {
 }
 .main-img {
 	margin-bottom: 10px;
-	height: 600px;
+	height: auto;
 	object-fit: fill;
 	overflow: hidden;
 }
@@ -32,7 +33,7 @@ body {
 .imgs img {
 	cursor: pointer;
 	height: 100%;
-	width: 100%;
+	width: auto;
 }
 
 @keyframes fadeIn {
@@ -44,4 +45,34 @@ body {
 .fade-in {
 	opacity: 0;
 	animation: fadeIn var(--fade-time) ease-in 1 forwards;
+}
+@media (max-width: 800px) {
+	.imgs {
+		height: 175px;
+	}
+}
+@media (max-width: 720px) {
+	.imgs {
+		height: 150px;
+	}
+}
+@media (max-width: 620px) {
+	.imgs {
+		height: 130px;
+	}
+}
+@media (max-width: 520px) {
+	.imgs {
+		height: 110px;
+	}
+}
+@media (max-width: 450px) {
+	.imgs {
+		height: 90px;
+	}
+}
+@media (max-width: 380px) {
+	.imgs {
+		height: 75px;
+	}
 }
