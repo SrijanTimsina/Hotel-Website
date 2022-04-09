@@ -23,7 +23,7 @@
 .report input:focus,
 .report textarea:focus {
 	outline: none;
-	border-color: coral;
+	border-color: var(--main-color);
 }
 .report button {
 	border: none;
@@ -36,7 +36,7 @@
 }
 .report button:hover {
 	color: black;
-	background: coral;
+	background: var(--main-color);
 }
 .form .form-content {
 	position: relative;

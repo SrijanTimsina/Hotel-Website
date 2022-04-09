@@ -3,7 +3,10 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
 		<title>Gallery</title>
 		<script
 			src="https://kit.fontawesome.com/8e52001b4f.js"
@@ -14,24 +17,31 @@
 		<link rel="shortcut icon" href="./img/favicon.png" />
 	</head>
 	<body>
-		<nav id="navbar">
+		<nav id="navbar" class="navbar">
 			<div class="container">
-				<a href="index.html"
-					><h1>
-						<img
-							src="./img/logo.png"
-							alt="logo"
-							height="50px"
-							width="200px"
-						/></h1
-				></a>
-				<ul>
+				<div class="navbar-logo-button">
+					<a href="index.html" class="navbar-logo"
+						><h1>
+							<img
+								src="./img/logo.png"
+								alt="logo"
+								height="50px"
+								width="200px"
+							/></h1
+					></a>
+					<button id="navbar-show" class="navbar-show">
+						<i class="fas fa-arrow-down fa-2x"></i>
+					</button>
+				</div>
+				<ul class="navbar-links">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="about.html">About</a></li>
 					<li><a href="contact.html">Contact</a></li>
 					<li><a href="booking.html">Book Now</a></li>
 					<li>
-						<a class="photo" href="photos.html" class="active">Gallery</a>
+						<a class="photo" href="photos.html" class="active"
+							>Gallery</a
+						>
 					</li>
 				</ul>
 			</div>
@@ -54,36 +64,43 @@
 		</div>
 
 		<footer id="main-footer">
-			<div class="footer-logo">
-				<img src="./img/logo.png" alt="logo" height="60px" width="400px" />
-			</div>
-			<div class="footer-links">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="contact.html">Contact</a></li>
-					<li><a href="booking.html">Book Now</a></li>
-					<li><a class="photo" href="photos.html">Photos</a></li>
-				</ul>
+			<div class="footer-logo-links">
+				<div class="footer-logo">
+					<p>Copyright &copy; 2021, Srijan Timsina</p>
+					<img
+						src="./img/logo.png"
+						alt="logo"
+						height="60px"
+						width="400px"
+					/>
+				</div>
+				<div class="footer-links">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="booking.html">Book Now</a></li>
+						<li><a class="photo" href="photos.html">Photos</a></li>
+					</ul>
+				</div>
 			</div>
 			<div class="footer-container">
 				<div class="box">
-					<i class="fas fa-hotel fa-3x"></i>
-					<h3>Location</h3>
-					<p>Kathmandu</p>
+					<p><i class="fas fa-map"></i> Kathmandu, Nepal</p>
 				</div>
-				<div class="box">
-					<i class="fas fa-phone fa-3x"></i>
-					<h3>Phone</h3>
-					<p>9876543210</p>
-				</div>
-				<div class="box">
-					<i class="fas fa-envelope fa-3x"></i>
-					<h3>Email</h3>
-					<p>classichotel@gmail.com</p>
+				<div class="number-email">
+					<div class="box">
+						<p><i class="fas fa-phone"></i> 9876543210</p>
+					</div>
+					<div class="box">
+						<p>
+							<i class="fas fa-envelope"></i> classichotel@gmail.com
+						</p>
+					</div>
 				</div>
 			</div>
 		</footer>
 		<script src="js/gallery.js"></script>
+		<script src="js/navbar.js"></script>
 	</body>
 </html>

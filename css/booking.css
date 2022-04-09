@@ -48,5 +48,5 @@
 }
 .booking button:hover {
 	color: black;
-	background-color: coral;
+	background-color: var(--main-color);
 }

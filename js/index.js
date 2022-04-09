@@ -1,8 +1,5 @@
 const slides = document.querySelectorAll(".slide");
-const next = document.querySelector("#next");
-const prev = document.querySelector("#prev");
-const time = document.getElementById("time");
-const day = document.getElementById("day");
+
 const intervalTime = 3000;
 let slideInterval;
 let counter = 0;
@@ -33,15 +30,4 @@ const prevSlide = () => {
 	setTimeout(() => current.classList.remove("current"));
 };
 
-next.addEventListener("click", (e) => {
-	nextSlide();
-	clearInterval(slideInterval);
-	slideInterval = setInterval(nextSlide, intervalTime);
-});
-
-prev.addEventListener("click", (e) => {
-	prevSlide();
-	clearInterval(slideInterval);
-	slideInterval = setInterval(nextSlide, intervalTime);
-});
 slideInterval = setInterval(nextSlide, intervalTime);
