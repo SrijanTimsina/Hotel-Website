@@ -12,8 +12,8 @@ function imgClick(e) {
 		return;
 	} else {
 		img.forEach((img) => (img.style.opacity = 1));
-		current.src = e.target.src;
 		fullScreenImage.setAttribute("href", e.target.src);
+		current.src = e.target.src;
 		current.classList.add("fade-in");
 		setTimeout(() => current.classList.remove("fade-in"), 500);
 		e.target.style.opacity = opacity;
